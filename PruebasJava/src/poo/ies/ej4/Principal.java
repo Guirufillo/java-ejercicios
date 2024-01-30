@@ -1,4 +1,4 @@
-package poo.ies.eje4;
+package poo.ies.ej4;
 
 public class Principal {
     public static void main(String[] args) {

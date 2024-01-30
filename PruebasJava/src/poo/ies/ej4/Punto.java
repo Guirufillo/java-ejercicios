@@ -1,4 +1,4 @@
-package poo.ies.eje4;
+package poo.ies.ej4;
 
 public class Punto {
 
@@ -31,9 +31,9 @@ public class Punto {
         this.y = y;
     }
 
-    public double calcularDistancia(Punto p){
-        double distanciaX = this.x - p.getX();
-        double distanciaY = this.y - p.getY();
+    public double calcularDistancia(Punto punto2){
+        double distanciaX = this.x - punto2.getX();
+        double distanciaY = this.y - punto2.getY();
         return distanciaX * distanciaX + distanciaY * distanciaY;
     }
     public void visualizarPunto() {
