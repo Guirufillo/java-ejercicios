@@ -9,13 +9,13 @@ public class Tienda {
         Scanner leer = new Scanner(System.in);
         AlmacenBicis almacen = new AlmacenBicis();
 
-        Bicicleta[] nuevaBicicleta=new Bicicleta[4];
-        nuevaBicicleta[0] = new Bicicleta(1, "HP", "mod", 6, 12, true, "21/05/2006", 1500);
-        nuevaBicicleta[1] = new Bicicleta(2, "BH", "XM", 3, 17, true, "12/09/2009", 1700);
-        nuevaBicicleta[2] = new Bicicleta(3, "BH", "Road", 2, 16, false, "30/08/2001", 900);
-        nuevaBicicleta[3] = new Bicicleta(4, "CR", "pepino", 4, 14, false, "18/01/2004", 700);
-        // Agrega las bicicletas al almacén
-        almacen.agregarNuevasBicicletas(nuevaBicicleta);
+        Bicicleta[] BicicletaMain=new Bicicleta[4];
+        BicicletaMain[0] = new Bicicleta(1, "HP", "mod", 6, 12, true, "21/05/2006", 1500);
+        BicicletaMain[1] = new Bicicleta(2, "BH", "XM", 3, 17, true, "12/09/2009", 1700);
+        BicicletaMain[2] = new Bicicleta(3, "BH", "Road", 2, 16, false, "30/08/2001", 900);
+        BicicletaMain[3] = new Bicicleta(4, "CR", "pepino", 4, 14, false, "18/01/2004", 700);
+        // Agrega las bicicletas del main al almacén
+        almacen.agregarBicicletasDelMain(BicicletaMain);
 
         // Imprime la tabla después de agregar las bicicletas
         AlmacenBicis.imprimirTabla(bicicletas);

@@ -16,10 +16,10 @@ public class AlmacenBicis {
         bicicletas = new Bicicleta[MAX_BICICLETAS];
     }
 
-    public void agregarNuevasBicicletas(Bicicleta[] nuevasBicicletas) {
-        for (Bicicleta nuevaBicicleta : nuevasBicicletas) {
-            if (stockTotal < MAX_BICICLETAS && nuevaBicicleta != null) {
-                bicicletas[stockTotal] = nuevaBicicleta;
+    public void agregarBicicletasDelMain(Bicicleta[] nuevasBicicletas) {
+        for (Bicicleta BicicletadelMain : nuevasBicicletas) {
+            if (stockTotal < MAX_BICICLETAS && BicicletadelMain != null) {
+                bicicletas[stockTotal] = BicicletadelMain;
                 stockTotal++;
             } else {
                 System.out.println("Error: No hay espacio disponible para agregar más bicicletas.");
